@@ -64,6 +64,9 @@ var sensor = connected.then(function(tag) {
 
   tag.enableGyroscope(log);
   tag.notifyGyroscope(log);
+
+  tag.enableAccelerometer(log);
+  tag.notifyAccelerometer(log);
   return tag;
 });
 
@@ -93,10 +96,19 @@ sensor.then(function(tag) {
   })
 });
 
+sensor.then(function(tag) {
+  tag.on("acceleratorChange", function(x,y,z){
+    score = Math.sqrt(x**2 + y**2 + z**2);
+    log("Score" + score)
+  })
+})
+
 //==============================================================================
 // Step 4 (optional): Configure periods for sensor reads.
 //------------------------------------------------------------------------------
 // The registered listeners will be invoked with the specified interval.
 sensor.then(function(tag) {
   tag.setIrTemperaturePeriod(3000, log);
+  tag.setAccelerometerPeriod(period, callback(error));
 });
+
