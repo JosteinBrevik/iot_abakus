@@ -9,4 +9,4 @@ I tillegg spilles det av en liten seierslåt i din ære.
 
 Prøv nå og bli hekta :D
 
-Computas er kule
+(Computas er kule<3)
