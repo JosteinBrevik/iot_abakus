@@ -12,11 +12,12 @@ Prøv nå og bli hekta :D
 
 Hvordan:
 
-1. Last fila rp.py
-2. Legg den over på RaspberryPien 
+1. Last fila st.py og example2.js
+2. Legg de over på RaspberryPien 
 3. Sett opp sensortagen -> https://github.com/mehmandarov/sensortag-gettingstarted
-4. Kast Pikaballen
-5. Få highscore
-6. Motta all mulig ære
+4. Kjør st.py på RasberryPien
+5. Kast Pikaballen
+6. Få highscore
+7. Motta all mulig ære
 
 (Computas er kule<3)
